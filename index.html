@@ -28,7 +28,7 @@
                     <li>Can make the user travel through time</li>
                     <li>Sophisticated time altering technology</li>
                 </ul>
-            </p>
+
         </section>
 
         <section>
@@ -51,9 +51,39 @@
 
         <section>
             <h2>Product Image</h2>
-            <img src="watch.jpg" alt="Luxury Watch" width="500">
+            <img src="The_ChronoWatch.png" alt="ChronoWatch" width="500">
             <p>Note: Image for illustrative purposes only.</p>
         </section>
+
+        <section>
+          <h2>Purchase the Watch</h2>
+          <form action="/about.html" method="post">
+              <fieldset>
+                  <legend>Order Details</legend>
+                  
+                  <label for="name">Full Name:</label><br>
+                  <input type="text" id="name" name="name" required><br><br>
+
+                  <label for="email">Email Address:</label><br>
+                  <input type="email" id="email" name="email" required><br><br>
+
+                  <label for="address">Shipping Address:</label><br>
+                  <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+                  <label for="payment-method">Payment Method:</label><br>
+                  <select id="payment-method" name="payment-method">
+                      <option value="credit-card">Credit Card</option>
+                      <option value="paypal">PayPal</option>
+                      <option value="bank-transfer">Bank Transfer</option>
+                  </select><br><br>
+
+                  <label for="quantity">Quantity:</label><br>
+                  <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+                  <input type="submit" value="Place Order">
+              </fieldset>
+          </form>
+      </section>
     </main>
 
     <footer>
